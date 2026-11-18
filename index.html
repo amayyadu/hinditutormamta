@@ -1,0 +1,2072 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Hindi with Mamta – Personalized Online Hindi Lessons</title>
+<meta id="md" name="description" content="Learn Hindi online with Mamta Rani, an experienced Hindi educator. Beginner-friendly, structured lessons for international learners.">
+<meta property="og:title" content="Hindi with Mamta"><meta property="og:description" content="Personalized online Hindi lessons for international learners."><meta property="og:type" content="website">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"EducationalOrganization","name":"Hindi with Mamta","description":"Personalized online Hindi lessons for international learners."}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@400;500;600&family=Noto+Sans+Devanagari:wght@500;600&display=swap" rel="stylesheet">
+<style>
+    :root {
+      --bg: #f7f2e8;
+      --surface: #fffdf8;
+      --ink: #2b2b2e;
+      --indigo: #1d2358;
+      --accent: #b4532f;
+      --sage: #d9e0cf;
+      --sage-d: #4f6350;
+      --line: #e6dccb;
+      --on-accent: #fff;
+      --shadow: 0 10px 30px rgba(29, 35, 88, 0.08);
+      box-sizing: border-box;
+      padding-top: env(safe-area-inset-top, 0px);
+      padding-bottom: env(safe-area-inset-bottom, 0px);
+    }
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --on-accent: #1a1208;
+        --bg: #14162b;
+        --surface: #1d2040;
+        --ink: #ece8de;
+        --indigo: #e8e4d6;
+        --accent: #e08a62;
+        --sage: #2b3a33;
+        --sage-d: #b7c9b3;
+        --line: #32365e;
+        --shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+      }
+    }
+    :root[data-theme="dark"] {
+      --on-accent: #1a1208;
+      --bg: #14162b;
+      --surface: #1d2040;
+      --ink: #ece8de;
+      --indigo: #e8e4d6;
+      --accent: #e08a62;
+      --sage: #2b3a33;
+      --sage-d: #b7c9b3;
+      --line: #32365e;
+      --shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+    }
+    html {
+      scroll-padding-top: calc(env(safe-area-inset-top, 0px) + 72px);
+      scroll-behavior: smooth;
+    }
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font:
+        16px/1.65 Inter,
+        system-ui,
+        sans-serif;
+    }
+    h1,
+    h2,
+    h3 {
+      font-family: "Playfair Display", Georgia, serif;
+      color: var(--indigo);
+      line-height: 1.15;
+      margin: 0 0 0.5em;
+      font-weight: 600;
+    }
+    h1 {
+      font-size: clamp(2.2rem, 5vw, 3.6rem);
+    }
+    h2 {
+      font-size: clamp(1.7rem, 3.4vw, 2.4rem);
+    }
+    h3 {
+      font-size: 1.25rem;
+    }
+    .hi {
+      font-family: "Noto Sans Devanagari", sans-serif;
+    }
+    a {
+      color: inherit;
+    }
+    .wrap {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    section {
+      padding: 72px 0;
+    }
+    .btn {
+      display: inline-block;
+      padding: 13px 22px;
+      border-radius: 999px;
+      font-weight: 600;
+      text-decoration: none;
+      border: 2px solid var(--accent);
+      background: var(--accent);
+      color: var(--on-accent);
+      cursor: pointer;
+      font-size: 1rem;
+      font-family: inherit;
+    }
+    .btn.alt {
+      background: transparent;
+      color: var(--indigo);
+      border-color: var(--indigo);
+    }
+    :focus-visible {
+      outline: 3px solid var(--accent);
+      outline-offset: 3px;
+    }
+    #ann {
+      background: var(--indigo);
+      color: var(--bg);
+      text-align: center;
+      padding: 8px 40px;
+      font-size: 0.9rem;
+      position: relative;
+    }
+    #ann button {
+      position: absolute;
+      right: 10px;
+      top: 4px;
+      background: none;
+      border: 0;
+      color: inherit;
+      font-size: 1.2rem;
+      cursor: pointer;
+    }
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: var(--bg);
+      border-bottom: 1px solid var(--line);
+    }
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 68px;
+    }
+    .logo {
+      font-family: "Playfair Display", serif;
+      font-size: 1.35rem;
+      color: var(--indigo);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .logo span {
+      color: var(--accent);
+      font-family: "Noto Sans Devanagari";
+    }
+    .links {
+      display: flex;
+      gap: 22px;
+      align-items: center;
+    }
+    .links a {
+      text-decoration: none;
+      font-size: 0.95rem;
+    }
+    #burger {
+      display: none;
+      background: none;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 8px 12px;
+      color: var(--ink);
+      font-size: 1.1rem;
+    }
+    .links a {
+      white-space: nowrap;
+    }
+    .links {
+      gap: 18px;
+    }
+    @media (max-width: 1080px) {
+      #burger {
+        display: block;
+      }
+      .links {
+        display: none;
+        position: absolute;
+        top: 68px;
+        left: 0;
+        right: 0;
+        background: var(--bg);
+        flex-direction: column;
+        align-items: stretch;
+        padding: 20px;
+        border-bottom: 1px solid var(--line);
+        max-height: calc(100vh - 68px);
+        overflow: auto;
+      }
+      .links.open {
+        display: flex;
+      }
+      .links .btn {
+        text-align: center;
+      }
+    }
+    .hero {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 48px;
+      align-items: center;
+    }
+    @media (max-width: 860px) {
+      .hero {
+        grid-template-columns: 1fr;
+      }
+    }
+    .eyebrow {
+      color: var(--accent);
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      font-size: 0.82rem;
+    }
+    .hero p.lead {
+      font-size: 1.1rem;
+      max-width: 56ch;
+    }
+    .cta {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin: 24px 0 14px;
+    }
+    .small {
+      font-size: 0.9rem;
+      opacity: 0.8;
+    }
+    .photo {
+      position: relative;
+      aspect-ratio: 4/5;
+      border-radius: 28px;
+      background: linear-gradient(160deg, var(--sage), var(--bg));
+      border: 1px solid var(--line);
+      box-shadow: var(--shadow);
+      display: grid;
+      place-items: center;
+      overflow: hidden;
+    }
+    .photo svg {
+      width: 55%;
+      opacity: 0.5;
+    }
+    .photo .ph {
+      position: absolute;
+      bottom: 14px;
+      left: 0;
+      right: 0;
+      text-align: center;
+      font-size: 0.78rem;
+      opacity: 0.7;
+    }
+    .float {
+      position: absolute;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 10px 14px;
+      box-shadow: var(--shadow);
+      font-size: 0.9rem;
+      animation: fl 6s ease-in-out infinite;
+    }
+    .float b {
+      display: block;
+      font-size: 1.15rem;
+      color: var(--accent);
+    }
+    .f1 {
+      top: 8%;
+      left: -4%;
+    }
+    .f2 {
+      top: 42%;
+      right: -3%;
+      animation-delay: 1.5s;
+    }
+    .f3 {
+      bottom: 14%;
+      left: 5%;
+      animation-delay: 3s;
+    }
+    @keyframes fl {
+      50% {
+        transform: translateY(-8px);
+      }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .float {
+        animation: none;
+      }
+      html {
+        scroll-behavior: auto;
+      }
+    }
+    .trust {
+      background: var(--indigo);
+      color: var(--bg);
+      padding: 34px 0;
+    }
+    .trust .wrap {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+    .trust b {
+      font-family: "Playfair Display", serif;
+      font-size: 1.3rem;
+      display: block;
+    }
+    @media (max-width: 760px) {
+      .trust .wrap {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+    .grid3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+    .grid2 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 22px;
+    }
+    @media (max-width: 860px) {
+      .grid3,
+      .grid2 {
+        grid-template-columns: 1fr;
+      }
+    }
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      padding: 26px;
+      box-shadow: var(--shadow);
+    }
+    .card .art {
+      height: 90px;
+      border-radius: 14px;
+      background: var(--sage);
+      margin-bottom: 16px;
+      display: grid;
+      place-items: center;
+      font-size: 2rem;
+      color: var(--sage-d);
+    }
+    .tag {
+      display: inline-block;
+      font-size: 0.78rem;
+      background: var(--sage);
+      color: var(--sage-d);
+      padding: 3px 10px;
+      border-radius: 99px;
+      margin: 0 6px 10px 0;
+      font-weight: 600;
+    }
+    .tag.soon {
+      background: #f3dccd;
+      color: #7a3419;
+    }
+    .sage {
+      background: var(--sage);
+    }
+    .sage .card {
+      background: var(--surface);
+    }
+    .problems {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 14px;
+      margin: 26px 0;
+    }
+    @media (max-width: 860px) {
+      .problems {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+    .problems div {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 16px;
+      font-size: 0.92rem;
+    }
+    .steps {
+      counter-reset: s;
+    }
+    .steps .card::before {
+      counter-increment: s;
+      content: counter(s);
+      display: grid;
+      place-items: center;
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      background: var(--accent);
+      color: var(--on-accent);
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+    .phr {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+    }
+    .phr button.pc {
+      text-align: left;
+      font: inherit;
+      color: inherit;
+      cursor: pointer;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 20px;
+      box-shadow: var(--shadow);
+      transition:
+        transform 0.15s,
+        border-color 0.15s;
+    }
+    .pc:hover,
+    .pc.on {
+      border-color: var(--accent);
+      transform: translateY(-3px);
+    }
+    .pc .d {
+      font-size: 1.6rem;
+      color: var(--indigo);
+    }
+    .pc .r {
+      color: var(--accent);
+      font-weight: 600;
+    }
+    .pc .p {
+      font-size: 0.8rem;
+      margin-top: 10px;
+      opacity: 0.75;
+    }
+    #tts {
+      margin-top: 14px;
+      font-size: 0.88rem;
+      opacity: 0.8;
+    }
+    .about {
+      display: grid;
+      grid-template-columns: 0.8fr 1.2fr;
+      gap: 44px;
+      align-items: center;
+    }
+    @media (max-width: 860px) {
+      .about {
+        grid-template-columns: 1fr;
+      }
+    }
+    .portrait {
+      aspect-ratio: 1;
+      border-radius: 50%;
+      max-width: 320px;
+      background: var(--sage);
+      display: grid;
+      place-items: center;
+      font-size: 0.85rem;
+      text-align: center;
+      padding: 30px;
+      border: 1px solid var(--line);
+    }
+    .final {
+      text-align: center;
+      background: var(--indigo);
+      color: var(--bg);
+      border-radius: 28px;
+      padding: 64px 24px;
+    }
+    .final h2 {
+      color: var(--bg);
+    }
+    .final .btn.alt {
+      color: var(--bg);
+      border-color: var(--bg);
+    }
+    .final .cta {
+      justify-content: center;
+    }
+    details {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 14px 18px;
+      margin-bottom: 10px;
+    }
+    summary {
+      cursor: pointer;
+      font-weight: 600;
+    }
+    form {
+      display: grid;
+      gap: 12px;
+    }
+    input,
+    select,
+    textarea {
+      font: inherit;
+      padding: 12px;
+      border-radius: 12px;
+      border: 1px solid var(--line);
+      background: var(--surface);
+      color: var(--ink);
+      width: 100%;
+    }
+    label {
+      font-size: 0.88rem;
+      font-weight: 600;
+      display: grid;
+      gap: 4px;
+    }
+    #msg {
+      min-height: 1.4em;
+      font-size: 0.92rem;
+    }
+    footer {
+      border-top: 1px solid var(--line);
+      padding: 44px 0 30px;
+      font-size: 0.92rem;
+    }
+    footer .grid3 {
+      margin-bottom: 24px;
+    }
+    footer a {
+      display: block;
+      text-decoration: none;
+      margin: 4px 0;
+    }
+
+    .logo span {
+      background: var(--accent);
+      color: var(--on-accent);
+      border-radius: 10px 10px 10px 2px;
+      padding: 0 9px;
+      margin-right: 6px;
+      font-size: 1.05rem;
+    }
+    .links a.on:not(.btn) {
+      color: var(--accent);
+      font-weight: 600;
+    }
+    [hidden] {
+      display: none !important;
+    }
+    .ph1 {
+      padding: 56px 0 24px;
+    }
+    .ph1 p {
+      max-width: 62ch;
+      font-size: 1.1rem;
+    }
+    .draft {
+      background: #f3dccd;
+      color: #5c2410;
+      border-radius: 12px;
+      padding: 12px 16px;
+      font-size: 0.9rem;
+      margin: 0 0 20px;
+    }
+    .two {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 22px;
+    }
+    @media (max-width: 860px) {
+      .two {
+        grid-template-columns: 1fr;
+      }
+    }
+    .card ul,
+    .prose ul {
+      padding-left: 1.1em;
+      margin: 0.4em 0;
+    }
+    .prose {
+      max-width: 68ch;
+    }
+    .prose h2 {
+      margin-top: 1.6em;
+    }
+    .tl {
+      border-left: 3px solid var(--sage);
+      padding-left: 18px;
+      margin: 10px 0;
+    }
+    .tl div {
+      margin-bottom: 14px;
+    }
+    .err {
+      color: #b3261e;
+      font-size: 0.82rem;
+      font-weight: 400;
+    }
+    [aria-invalid="true"] {
+      border-color: #b3261e;
+    }
+    .hp {
+      position: absolute;
+      left: -9999px;
+    }
+    .skip {
+      position: absolute;
+      left: 12px;
+      top: -60px;
+      background: var(--accent);
+      color: var(--on-accent);
+      padding: 10px 16px;
+      border-radius: 10px;
+      z-index: 50;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .skip:focus {
+      top: 8px;
+    }
+    .photo img,
+    .portrait img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .portrait {
+      position: relative;
+      overflow: hidden;
+    }
+    .f1 {
+      left: 4%;
+    }
+    .f2 {
+      right: 4%;
+    }
+    #burger {
+      min-width: 44px;
+      min-height: 44px;
+    }
+    input[type="checkbox"] {
+      width: 20px;
+      height: 20px;
+      accent-color: var(--accent);
+      margin-right: 8px;
+      vertical-align: middle;
+    }
+    @media (max-width: 860px) {
+      .photo {
+        max-width: 420px;
+        width: 100%;
+        margin: 0 auto;
+      }
+      .links {
+        max-height: calc(100vh - 68px);
+        overflow: auto;
+      }
+      .links .btn {
+        text-align: center;
+      }
+      .problems div:last-child {
+        grid-column: 1/-1;
+      }
+    }
+    @media (min-width: 600px) and (max-width: 860px) {
+      .grid3 {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (max-width: 600px) {
+      section {
+        padding: 48px 0;
+      }
+      .ph1 {
+        padding: 36px 0 16px;
+      }
+      .final {
+        padding: 44px 18px;
+      }
+      .card {
+        padding: 20px;
+      }
+      .float {
+        font-size: 0.8rem;
+        padding: 8px 10px;
+      }
+    }
+    .tabs {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
+    .tabs button {
+      font: inherit;
+      padding: 9px 18px;
+      border-radius: 999px;
+      border: 2px solid var(--indigo);
+      background: transparent;
+      color: var(--indigo);
+      cursor: pointer;
+      font-weight: 600;
+    }
+    .tabs button[aria-selected="true"] {
+      background: var(--indigo);
+      color: var(--bg);
+    }
+    .stack {
+      display: grid;
+      gap: 16px;
+    }
+    .rowf {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .rowf select,
+    .rowf input:not([type="checkbox"]) {
+      width: auto;
+      max-width: 100%;
+    }
+    .btn:disabled {
+      opacity: 0.6;
+      cursor: wait;
+    }
+    #alinks a {
+      color: var(--accent);
+    }
+  </style></head><body><a class="skip" href="#main" onclick="event.preventDefault();document.getElementById('main').focus()">Skip to content</a>
+<div id="ann"><span id="annt"></span><button aria-label="Hide announcement" onclick="this.parentNode.remove()">×</button></div>
+<header><div class="wrap"><nav aria-label="Main"><a class="logo" href="#/"><span aria-hidden="true" class="hi">अ</span>Hindi with Mamta</a>
+<button id="burger" aria-label="Menu" aria-expanded="false">☰</button>
+<div class="links" id="links"><a href="#/" data-v="home">Home</a><a href="#/courses" data-v="courses">Learn Hindi</a><a href="#/about" data-v="about">About Mamta</a><a href="#/home/how">How It Works</a><a href="#/home/faq">FAQ</a><a href="#/contact" data-v="contact">Contact</a><a href="#/login" id="na" data-v="login" hidden>Log in</a><a href="#/admin" id="nadm" data-v="admin" hidden>Admin</a><a class="btn" href="#/courses">Start Learning</a></div></nav></div></header>
+<main id="main" tabindex="-1" style="outline:0">
+<div class="view" data-view="home">
+<section><div class="wrap hero">
+<div>
+<div class="eyebrow">PERSONALIZED ONLINE HINDI LESSONS</div>
+<h1>Speak Hindi with Confidence. Connect with India.</h1>
+<p class="lead">Discover the beauty of Hindi through engaging, structured lessons designed around your goals. Learn everyday conversations, build your vocabulary, and explore Indian culture with Mamta Rani, an experienced Hindi educator.</p>
+<div class="cta"><a class="btn" href="#/courses">Explore Hindi Courses</a><a class="btn alt" href="#/about">Meet Your Teacher</a></div>
+<div class="small">Beginner-friendly • Live lessons on Zoom • Comfortable pace</div>
+</div>
+<div class="photo" role="img" aria-label="Photo placeholder for Mamta teaching Hindi">
+<svg viewBox="0 0 100 100" fill="currentColor" style="color:var(--sage-d)"><circle cx="50" cy="35" r="16"/><path d="M18 90c0-20 14-32 32-32s32 12 32 32z"/></svg>
+<div class="ph">Teacher photo placeholder — add a real photo</div>
+<div class="float f1"><b class="hi">नमस्ते</b>Hello</div>
+<div class="float f2"><b class="hi">धन्यवाद</b>Thank you</div>
+<div class="float f3"><b class="hi">आप कैसे हैं?</b>How are you?</div>
+</div></div></section>
+
+<div class="trust"><div class="wrap">
+<div><b><span class="yrs">16+</span> Years</b>at Delhi Public School Sushant Lok</div>
+<div><b>Hindi</b>Language and Literature teaching</div>
+<div><b>Coordination</b>Subject coordination and curriculum development</div>
+<div><b>B.Ed.</b>Hindi Honours</div></div></div>
+
+<section><div class="wrap">
+<h2>Hindi May Look Difficult. Learning It Doesn’t Have to Be.</h2>
+<p style="max-width:62ch">Most beginners run into the same hurdles. Clear explanations, practical examples, and steady practice help you move past them.</p>
+<div class="problems"><div>✍️ An unfamiliar script</div><div>💬 Forming first sentences</div><div>😬 Speaking without nerves</div><div>🧠 Remembering vocabulary</div><div>👂 Following everyday talk</div></div>
+<p style="max-width:62ch"><b>The approach:</b> start with the fundamentals, learn words in context, practise real conversations, and move at a comfortable pace.</p>
+</div></section>
+
+<section class="sage"><div class="wrap">
+<h2>Find Your Way to Hindi</h2>
+<p class="small">Every course is taught live on Zoom. Register and Mamta will contact you personally to talk about fees and schedule.</p>
+<div class="grid3">
+<div class="card"><div class="art hi">अ आ</div><span class="tag">Level: Beginner</span><span class="tag soon">Open for registration</span><h3>Hindi for Complete Beginners</h3><p>Learn the fundamentals, basic vocabulary, pronunciation, greetings, and simple sentences.</p><a class="btn" href="#/course/beginner">Explore Beginner Hindi</a></div>
+<div class="card"><div class="art">💬</div><span class="tag">Level: Beginner–Intermediate</span><span class="tag soon">Open for registration</span><h3>Conversational Hindi for Everyday Life</h3><p>Practise useful conversations for daily life, meeting people, shopping, travel, and communicating in India.</p><a class="btn" href="#/course/conversational">Explore Conversational Hindi</a></div>
+<div class="card"><div class="art">🧭</div><span class="tag">All levels</span><span class="tag soon">Open for registration</span><h3>Personalized Hindi Lessons</h3><p>One-to-one lessons tailored to your goals, existing level, pace, and interests.</p><a class="btn" href="#/course/personalized">Find Your Learning Path</a></div>
+</div></div></section>
+
+<section><div class="wrap">
+<h2>Learn Hindi with a Teacher Who Understands How Students Learn</h2>
+<div class="grid3">
+<div class="card"><h3>Experienced with Hindi</h3><p>Extensive experience teaching Hindi language and literature, including <span class="yrs">16+</span> years at Delhi Public School Sushant Lok.</p></div>
+<div class="card"><h3>Clear structure</h3><p>Experience as Hindi Subject Coordinator, with curriculum design and assessment expertise, means lessons build step by step.</p></div>
+<div class="card"><h3>Engaging and encouraging</h3><p>Engaging teaching methods, strong communication, and a B.Ed. in Hindi Honours support a clear, supportive classroom.</p></div>
+</div></div></section>
+
+<section class="sage" id="how"><div class="wrap">
+<h2>How It Works</h2>
+<div class="grid3 steps">
+<div class="card"><h3>Choose Your Goal</h3><p>Everyday conversation, travel, personal interest, or structured study.</p></div>
+<div class="card"><h3>Find Your Course</h3><p>Explore the course options or request personalized lessons.</p></div>
+<div class="card"><h3>Start Your Hindi Journey</h3><p>Join live lessons on Zoom and build confidence through practice.</p></div></div>
+<p style="margin-top:24px"><a class="btn" href="#/courses">Find Your Course</a></p></div></section>
+
+<section><div class="wrap">
+<h2>Your First 5 Hindi Phrases</h2>
+<p>Tap a card to hear it. Audio uses your browser’s text-to-speech, not a recording by Mamta.</p>
+<div class="phr" id="phr"></div>
+<div id="tts" role="status"></div>
+<p style="margin-top:22px"><a class="btn" href="#/courses">Ready to Learn More Hindi?</a></p></div></section>
+
+<section class="sage"><div class="wrap about">
+<div class="portrait">Portrait placeholder — add a professional photo of Mamta</div>
+<div><h2>Meet Mamta Rani — Your Hindi Teacher</h2>
+<p>Hindi is more than a language; it is a way to connect with people, stories, and culture. With extensive experience in Hindi education, curriculum development, and student engagement, Mamta brings a structured and student-focused approach to learning. Her goal is to make your Hindi learning journey clear, engaging, and rewarding.</p>
+<p><a class="btn alt" href="#/about">Read Mamta’s full story</a></p></div></div></section>
+
+<section id="faq"><div class="wrap" style="max-width:760px">
+<h2>Questions</h2>
+<details><summary>How are lessons taught?</summary><p>Live, with Mamta, on Zoom. Lesson length, schedule and time zone are confirmed with Mamta for each course.</p></details>
+<details><summary>Do I need any Hindi to start?</summary><p>No. Lessons are designed to welcome complete beginners.</p></details>
+<details><summary>How do I join a course?</summary><p>Register through the contact form. Mamta will get in touch with you personally.</p></details>
+<details><summary>What does it cost?</summary><p>Fees are not listed on the website. After you register, Mamta will talk to you personally about fees and schedule.</p></details>
+<details><summary>Interested in Sanskrit too?</summary><p>Sanskrit is not currently offered. You can tick the Sanskrit box on the contact form and nothing is purchased.</p></details>
+</div></section>
+
+<section><div class="wrap"><div class="final">
+<h2>Your Hindi Journey Starts with One Word.</h2>
+<p>Whether you are starting from zero or looking to improve your everyday conversations, take the first step toward learning Hindi.</p>
+<div class="cta"><a class="btn" href="#/courses">Explore Courses</a><a class="btn alt" href="#/contact">Contact Mamta</a></div></div></div></section>
+</div>
+<div class="view" data-view="courses" hidden><section class="ph1"><div class="wrap"><h1>Learn Hindi</h1><p>Three ways to learn Hindi, all taught live on Zoom. Register for a course and Mamta will contact you personally to discuss fees and schedule.</p></div></section><section style="padding-top:0"><div class="wrap grid3" id="clist"></div></section></div>
+<div class="view" data-view="course" hidden><div class="wrap" id="cdet"></div></div>
+<div class="view" data-view="about" hidden>
+<section class="ph1"><div class="wrap"><h1>Experienced Educator. Passionate About Making Hindi Accessible.</h1></div></section>
+<section style="padding-top:0"><div class="wrap about"><div class="portrait">Portrait placeholder — add a professional photo of Mamta</div><div class="prose">
+<p>Mamta Rani is a Hindi educator whose career has been built in the classroom, teaching Hindi language and literature at Delhi Public School Sushant Lok, where she has served since April 2010. Alongside teaching she has worked as Subject Coordinator and Examination Incharge, which means designing curriculum and assessments as well as explaining the language.</p>
+<p>Her training began with a B.A. and a B.Ed. in Hindi Honours, followed by an M.A. in English. That mix helps her explain Hindi clearly to people who think in another language. Her aim is simple: make Hindi clear, engaging and rewarding.</p>
+<p class="small">Her school teaching has been with students in India. The online lessons for international learners are a new offering.</p></div></div></section>
+<section class="sage"><div class="wrap two"><div><h2>Experience</h2><div class="tl"><div><b>Delhi Public School Sushant Lok</b><br>April 2010 – present. Hindi teacher; Subject Coordinator; Examination Incharge; Assembly Incharge; House Coordinator.</div><div><b>Air Force School, Tezpur, Assam</b><br>One year.</div></div></div>
+<div><h2>Education</h2><div class="tl"><div><b>B.Ed. (Hindi Honours)</b><br>CSJM University, Kanpur, 2001</div><div><b>M.A. (English)</b><br>CSJM University, 1999</div><div><b>B.A. (Hindi Honours)</b><br>Punjab University, 1998</div><div><b>Computer course</b><br>NIIT</div></div></div></div></section>
+<section><div class="wrap"><h2>My Approach to Teaching Hindi</h2><p class="small">This is the proposed approach for the new online lessons.</p><div class="grid3">
+<div class="card"><h3>Start with the fundamentals</h3><p>Sounds and script first, so everything else stands on solid ground.</p></div>
+<div class="card"><h3>Build vocabulary in context</h3><p>Words are learned inside useful phrases, not as isolated lists.</p></div>
+<div class="card"><h3>Practise useful conversations</h3><p>Short, realistic exchanges you could have in India.</p></div>
+<div class="card"><h3>Learn grammar through examples</h3><p>You see the pattern in real sentences before the rule is named.</p></div>
+<div class="card"><h3>Progress at a comfortable pace</h3><p>No rushing. Review comes built in.</p></div></div></div></section>
+<section class="sage" id="sk" hidden><div class="wrap" style="max-width:700px"><h2>Interested in Sanskrit Too?</h2><p>Sanskrit is not currently offered. If you would like to hear about it in future, you can register your interest. This is not an enrollment and nothing is purchased.</p><a class="btn alt" href="#/contact/sanskrit">Register Your Interest</a></div></section></div>
+<div class="view" data-view="contact" hidden><section class="ph1"><div class="wrap"><h1>Contact Mamta</h1><p>Tell us about your Hindi goals. Mamta will get in touch personally to discuss fees and schedule.</p></div></section>
+<section style="padding-top:0"><div class="wrap" style="max-width:640px"><form id="f" novalidate>
+<label>Full name<input name="name" autocomplete="name" maxlength="120"></label>
+<label>Email address<input name="email" type="email" autocomplete="email" maxlength="254"></label>
+<label>Country or time zone<input name="tz" autocomplete="country-name" maxlength="80"></label>
+<label>Mobile number (with country code)<input name="mobile" type="tel" autocomplete="tel" inputmode="tel" maxlength="25" placeholder="+44 7700 900123"></label>
+<label>Current Hindi level<select name="level"><option value="">Choose…</option><option>Complete beginner</option><option>Basic Hindi</option><option>Intermediate</option><option>Advanced</option><option>Not sure yet</option></select></label>
+<label>Learning goal<select name="goal"><option value="">Choose…</option><option>Everyday conversation</option><option>Travel in India</option><option>Personal interest</option><option>Cultural learning</option><option>Academic learning</option><option>Other</option></select></label>
+<label>Preferred lesson type<select name="lt"><option value="">Choose…</option><option>One-to-one</option><option>Small group</option><option>Not sure yet</option></select></label>
+<input type="hidden" name="course">
+<label>Message<textarea name="msg" rows="4" maxlength="2000"></textarea></label>
+<label class="sk" style="font-weight:400"><span><input type="checkbox" name="sk" style="width:auto"> Also keep me posted about possible Sanskrit lessons (optional)</span></label>
+<label style="font-weight:400"><span><input type="checkbox" name="ok" style="width:auto"> I agree that Mamta may contact me by email or phone about this inquiry and store my details for that purpose. See the <a href="#/privacy">Privacy Policy</a>.</span></label>
+<div class="hp" aria-hidden="true"><input name="website" tabindex="-1" autocomplete="off"></div>
+<button class="btn" type="submit" id="sb">Send inquiry</button><div id="msg" role="status"></div></form></div></section></div>
+<div class="view" data-view="login" hidden><section class="ph1"><div class="wrap"><h1 id="lt">Log in</h1></div></section>
+<section style="padding-top:0"><div class="wrap" style="max-width:480px">
+<div class="draft" id="auth-off" hidden>Accounts are not connected yet. Set CFG.supabaseUrl and CFG.supabaseKey to turn them on.</div>
+<form id="af" novalidate>
+<label id="l-name" hidden>Full name<input name="aname" autocomplete="name" maxlength="120"></label>
+<label id="l-email">Email address<input name="aemail" type="email" autocomplete="email" maxlength="254"></label>
+<label id="l-pw">Password<input name="apw" type="password" autocomplete="current-password" maxlength="200"></label>
+<button class="btn" type="submit" id="ab">Log in</button><div id="am" role="status"></div></form>
+<p class="small" id="alinks"></p></div></section></div>
+<div class="view" data-view="account" hidden><section class="ph1"><div class="wrap"><h1>My account</h1></div></section><section style="padding-top:0"><div class="wrap" id="acb" style="max-width:760px"></div></section></div>
+<div class="view" data-view="admin" hidden><section class="ph1"><div class="wrap"><h1>Admin</h1></div></section><section style="padding-top:0"><div class="wrap" id="adb"></div></section></div>
+<div class="view" data-view="privacy" hidden><div class="wrap prose"><section><h1>Privacy Policy</h1><div class="draft">Draft only. Review and adapt to your actual business and applicable laws before launch.</div><p>We collect only what you enter in the contact form: name, email, mobile number, country or time zone, Hindi level, goal, lesson preference and message.</p><p>If you create a student account we also store your email address, name, optional country or time zone, and the courses you request or are enrolled in.</p><p>We use it to reply to your inquiry. We do not sell it. Contact Mamta to ask for your data to be corrected or deleted.</p><p>Inquiries are stored in a Supabase database that only Mamta and authorised administrators can read. The hosting region and how long inquiries are kept must be confirmed before launch.</p></section></div></div>
+<div class="view" data-view="terms" hidden><div class="wrap prose"><section><h1>Terms and Conditions</h1><div class="draft">Draft only. Review and adapt before launch.</div><p>Fees and schedule are agreed privately with each student before they join.</p><p>Lesson content belongs to Mamta Rani and is for the personal use of enrolled students. No payments are taken on this website. Fees and lesson schedules are agreed directly and privately between you and Mamta.</p></section></div></div>
+</main>
+<footer><div class="wrap"><div class="grid3"><div><a class="logo" href="#/">Hindi with Mamta</a><p>Personalized online Hindi lessons for international learners.</p></div>
+<div><b>Explore</b><a href="#/courses">Learn Hindi</a><a href="#/about">About Mamta</a><a href="#/home/how">How It Works</a><a href="#/home/faq">FAQ</a><a href="#/contact">Contact</a></div>
+<div><b>Contact and legal</b><p class="small" id="fc">Contact details and social links will appear here once configured.</p><a href="#/privacy">Privacy Policy</a><a href="#/terms">Terms and Conditions</a></div></div><div class="small">© <span id="yr">2026</span> Hindi with Mamta. All rights reserved.</div></div></footer>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.114.0/dist/umd/supabase.js" crossorigin="anonymous"></script>
+<script>
+    /* ===== EDIT HERE: site settings and course content ===== */
+    var CFG = {
+      announce: "Your journey into Hindi starts here. Learn with Mamta!",
+      email: "hinditutormamta@gmail.com",
+      formEndpoint: "",
+      supabaseUrl: "https://qudbesuebuxqjinmkvhs.supabase.co",
+      supabaseKey: "sb_publishable_19bBkhJBnn5MRRpdP0Jwzg_vWK_X3p5",
+      teachingSince: "2010-04-01",
+      teacherPhoto: "mamta-teacher.jpg",
+      portraitPhoto: "mamta-portrait.jpg",
+      social: [],
+      sanskrit: true,
+      courses: {
+        beginner: {
+          title: "Hindi for Complete Beginners",
+          level: "Beginner",
+          status: "inquiry",
+          art: "अ आ",
+          blurb:
+            "Learn the fundamentals, basic vocabulary, pronunciation, greetings, and simple sentences.",
+          outcomes: [
+            "Read and pronounce basic Hindi sounds",
+            "Greet people and introduce yourself",
+            "Build simple sentences",
+          ],
+          who: [
+            "Complete beginners",
+            "Travelers and expats",
+            "Heritage learners starting from scratch",
+          ],
+          faq: [["Do I need to know the script?", "No. The course begins with sounds and the script."]],
+          rel: ["conversational", "personalized"],
+        },
+        conversational: {
+          title: "Conversational Hindi for Everyday Life",
+          level: "Beginner to Intermediate",
+          status: "inquiry",
+          art: "💬",
+          blurb:
+            "Practise useful conversations for daily life, meeting people, shopping, travel, and communicating in India.",
+          outcomes: [
+            "Handle common daily situations",
+            "Ask and answer simple questions",
+            "Feel more at ease speaking",
+          ],
+          who: ["Expats living in India", "Travelers", "Learners who know a little Hindi"],
+          faq: [
+            [
+              "What will we cover?",
+              "Topics are shaped around your goals. Mamta will talk them through with you after you register.",
+            ],
+          ],
+          rel: ["beginner", "personalized"],
+        },
+        personalized: {
+          title: "Personalized Hindi Lessons",
+          level: "All levels",
+          status: "inquiry",
+          art: "🧭",
+          blurb: "One-to-one lessons tailored to your goals, existing level, pace, and interests.",
+          outcomes: [
+            "A learning plan built around your goals",
+            "Lessons matched to your level and pace",
+          ],
+          who: [
+            "Adults who prefer individual attention",
+            "Parents seeking structured lessons for children",
+            "Anyone with a specific goal",
+          ],
+          faq: [["How do I start?", "Send an inquiry describing your goals and Mamta will reply."]],
+          rel: ["beginner", "conversational"],
+        },
+      },
+    };
+    var ST = {
+      soon: "Coming soon",
+      inquiry: "Open for registration",
+      paid: "Open for registration",
+      free: "Open for registration",
+      unavailable: "Temporarily unavailable",
+    };
+
+    var P = [
+      ["नमस्ते", "Namaste", "Hello"],
+      ["धन्यवाद", "Dhanyavaad", "Thank you"],
+      ["कृपया", "Kripya", "Please"],
+      ["मेरा नाम ___ है", "Mera naam ___ hai", "My name is ___"],
+      ["आप कैसे हैं?", "Aap kaise hain?", "How are you?"],
+    ];
+    var box = document.getElementById("phr"),
+      st = document.getElementById("tts");
+    P.forEach(function (p) {
+      var b = document.createElement("button");
+      b.className = "pc";
+      b.type = "button";
+      b.setAttribute("aria-label", "Play " + p[1] + ", meaning " + p[2]);
+      b.innerHTML =
+        '<div class="d hi">' +
+        p[0] +
+        '</div><div class="r">' +
+        p[1] +
+        "</div><div>" +
+        p[2] +
+        '</div><div class="p">▶ Hear it</div>';
+      b.onclick = function () {
+        document.querySelectorAll(".pc").forEach(function (x) {
+          x.classList.remove("on");
+        });
+        b.classList.add("on");
+        if (!("speechSynthesis" in window)) {
+          st.textContent =
+            "Audio is not supported in this browser. Recorded audio is not yet available.";
+          return;
+        }
+        var u = new SpeechSynthesisUtterance(p[0].replace(/___/g, ""));
+        u.lang = "hi-IN";
+        speechSynthesis.cancel();
+        speechSynthesis.speak(u);
+        st.textContent = "Playing with browser text-to-speech: " + p[1];
+      };
+      box.appendChild(b);
+    });
+
+    function $(i) {
+      return document.getElementById(i);
+    }
+    $("annt").textContent = CFG.announce;
+    if (!CFG.announce) $("ann").remove();
+    if (!CFG.sanskrit) {
+      $("sk").remove();
+      document.querySelectorAll(".sk").forEach(function (e) {
+        e.remove();
+      });
+    } else $("sk").hidden = false;
+    var yrs = Math.floor((Date.now() - new Date(CFG.teachingSince)) / 31557600000);
+    document.querySelectorAll(".yrs").forEach(function (e) {
+      e.textContent = yrs + "+";
+    });
+    $("yr").textContent = new Date().getFullYear();
+    if (CFG.teacherPhoto) {
+      var ph = document.querySelector(".photo");
+      ph.querySelector("svg").remove();
+      ph.querySelector(".ph").remove();
+      var im = new Image();
+      im.src = CFG.teacherPhoto;
+      im.alt = "";
+      ph.setAttribute("aria-label", "Mamta Rani, Hindi teacher");
+      ph.insertBefore(im, ph.firstChild);
+    }
+    if (CFG.portraitPhoto)
+      document.querySelectorAll(".portrait").forEach(function (p) {
+        p.textContent = "";
+        var im = new Image();
+        im.src = CFG.portraitPhoto;
+        im.alt = "Mamta Rani";
+        p.appendChild(im);
+      });
+    var fc = [];
+    if (CFG.email) fc.push('<a href="mailto:' + CFG.email + '">' + CFG.email + "</a>");
+    CFG.social.forEach(function (s) {
+      fc.push('<a href="' + s.url + '">' + s.name + "</a>");
+    });
+    if (fc.length) $("fc").outerHTML = fc.join("");
+    function card(k) {
+      var c = CFG.courses[k];
+      return (
+        '<div class="card"><div class="art hi">' +
+        c.art +
+        '</div><span class="tag">Level: ' +
+        c.level +
+        '</span><span class="tag soon">' +
+        ST[c.status] +
+        "</span><h3>" +
+        c.title +
+        "</h3><p>" +
+        c.blurb +
+        '</p><a class="btn" href="#/course/' +
+        k +
+        '">View details</a></div>'
+      );
+    }
+    $("clist").innerHTML = Object.keys(CFG.courses).map(card).join("");
+    function li(a) {
+      return (
+        "<ul>" +
+        a
+          .map(function (x) {
+            return "<li>" + x + "</li>";
+          })
+          .join("") +
+        "</ul>"
+      );
+    }
+    function course(k) {
+      var c = CFG.courses[k];
+      if (!c) return false;
+      var cta =
+        c.status === "unavailable"
+          ? "<p>This course is temporarily unavailable.</p>"
+          : '<a class="btn" href="#/contact/' +
+            k +
+            '">' +
+            (c.status === "soon" ? "Register your interest" : "Register for this course") +
+            "</a>";
+      $("cdet").innerHTML =
+        '<section class="ph1" style="padding-left:0"><a href="#/courses" class="small">← All courses</a><h1>' +
+        c.title +
+        '</h1><span class="tag">Level: ' +
+        c.level +
+        '</span><span class="tag soon">' +
+        ST[c.status] +
+        "</span><p>" +
+        c.blurb +
+        '</p></section><section style="padding-top:0"><div class="two"><div class="card"><h3>What you will learn</h3>' +
+        li(c.outcomes) +
+        "<h3>Who it is for</h3>" +
+        li(c.who) +
+        '<h3>Teaching approach</h3><p>Fundamentals first, vocabulary in context, useful conversations, grammar through examples, and a comfortable pace.</p></div><div class="card"><h3>Live lessons on Zoom</h3><p>This course is taught live by Mamta on Zoom, so you can ask questions and practise speaking as you learn.</p><p class="small">Lesson length, schedule and time zone are agreed privately with Mamta after you register.</p></div></div><div class="card" style="margin-top:22px"><h3>Fees and schedule</h3><p>Fees and lesson times are discussed privately with Mamta after you register, so they can be set around your goals and your time zone.</p>' +
+        cta +
+        "</div>" +
+        (c.faq.length
+          ? '<h2 style="margin-top:36px">Questions</h2>' +
+            c.faq
+              .map(function (q) {
+                return "<details><summary>" + q[0] + "</summary><p>" + q[1] + "</p></details>";
+              })
+              .join("")
+          : "") +
+        '<h2 style="margin-top:36px">Related courses</h2><div class="grid2">' +
+        c.rel.map(card).join("") +
+        "</div></section>";
+      document.title = c.title + " – Hindi with Mamta";
+      return true;
+    }
+    var T = {
+      home: [
+        "Hindi with Mamta – Personalized Online Hindi Lessons",
+        "Learn Hindi online with Mamta Rani, an experienced Hindi educator. Beginner-friendly, structured lessons for international learners.",
+      ],
+      courses: [
+        "Learn Hindi Online – Courses",
+        "Beginner Hindi, conversational Hindi and personalized one-to-one lessons with Mamta Rani.",
+      ],
+      about: [
+        "About Mamta Rani – Hindi Teacher",
+        "Mamta Rani’s experience, education and approach to teaching Hindi.",
+      ],
+      contact: [
+        "Contact – Hindi with Mamta",
+        "Ask about online Hindi lessons or register your interest.",
+      ],
+      privacy: ["Privacy Policy (draft)", "Draft privacy policy."],
+      terms: ["Terms and Conditions (draft)", "Draft terms."],
+      course: ["Course – Hindi with Mamta", "Course details."],
+      login: ["Log in – Hindi with Mamta", "Log in or create a student account."],
+      account: ["My account – Hindi with Mamta", "Your courses and details."],
+      admin: ["Admin – Hindi with Mamta", "Administration."],
+    };
+    /* ===== ACCOUNTS: log in, student account, admin ===== */
+    var sbc = null,
+      USER = null,
+      PROF = null,
+      READY = false,
+      RECOV = false,
+      AMODE = "login",
+      ADTAB = "inq";
+    if (CFG.supabaseUrl && CFG.supabaseKey && window.supabase) {
+      try {
+        sbc = window.supabase.createClient(CFG.supabaseUrl, CFG.supabaseKey);
+      } catch (e) {
+        sbc = null;
+      }
+    }
+    function q(b) {
+      return Promise.resolve(b);
+    }
+    function h(t, a, c) {
+      var e = document.createElement(t),
+        k;
+      if (a)
+        for (k in a) {
+          if (k === "class") e.className = a[k];
+          else if (k === "text") e.textContent = a[k];
+          else if (k.slice(0, 2) === "on") e[k] = a[k];
+          else e.setAttribute(k, a[k]);
+        }
+      (c || []).forEach(function (x) {
+        if (x != null) e.appendChild(typeof x === "string" ? document.createTextNode(x) : x);
+      });
+      return e;
+    }
+    function opt(v, t, s) {
+      var o = h("option", { value: v, text: t });
+      if (s) o.selected = true;
+      return o;
+    }
+    function sel(list, cur) {
+      var s = h("select");
+      list.forEach(function (x) {
+        s.appendChild(opt(x[0], x[1], x[0] === cur));
+      });
+      return s;
+    }
+    function note(el, t, bad) {
+      el.style.color = bad ? "#b3261e" : "inherit";
+      el.textContent = t;
+    }
+    function when(s) {
+      try {
+        return new Date(s).toLocaleString();
+      } catch (e) {
+        return s;
+      }
+    }
+    function fail(er) {
+      return er && er.message ? er.message : "Something went wrong.";
+    }
+    function updNav() {
+      var a = $("na"),
+        d = $("nadm");
+      if (!sbc) {
+        a.hidden = true;
+        d.hidden = true;
+        return;
+      }
+      a.hidden = false;
+      if (USER) {
+        a.textContent = "My account";
+        a.setAttribute("href", "#/account");
+        a.dataset.v = "account";
+      } else {
+        a.textContent = "Log in";
+        a.setAttribute("href", "#/login");
+        a.dataset.v = "login";
+      }
+      d.hidden = !(PROF && PROF.role === "admin");
+    }
+    function setUser(session) {
+      USER = session ? session.user : null;
+      PROF = null;
+      if (!USER) {
+        updNav();
+        return Promise.resolve();
+      }
+      function fb() {
+        PROF = { full_name: "", role: "student", email: USER.email, country_tz: null };
+        updNav();
+      }
+      return q(
+        sbc.from("profiles").select("full_name,email,role,country_tz").eq("id", USER.id).maybeSingle(),
+      ).then(function (r) {
+        if (r.data) {
+          PROF = r.data;
+          updNav();
+        } else fb();
+      }, fb);
+    }
+    /* public course pages follow the courses table */
+    function syncCourses() {
+      if (!sbc) return Promise.resolve();
+      return q(sbc.from("courses").select("slug,status,is_published"))
+        .then(function (r) {
+          if (r.error || !r.data || !r.data.length) return;
+          var seen = {};
+          r.data.forEach(function (d) {
+            var c = CFG.courses[d.slug];
+            if (!c) return;
+            seen[d.slug] = 1;
+            c.status = d.is_published ? d.status : "unavailable";
+          });
+          Object.keys(CFG.courses).forEach(function (k) {
+            if (!seen[k]) CFG.courses[k].status = "unavailable";
+          });
+          $("clist").innerHTML = Object.keys(CFG.courses).map(card).join("");
+          var p = location.hash.replace(/^#\/?/, "").split("/");
+          if (p[0] === "course") course(decodeURIComponent(p[1] || ""));
+        })
+        .catch(function () {});
+    }
+    /* ---- log in / sign up / reset ---- */
+    function authView(m) {
+      AMODE = { login: 1, signup: 1, forgot: 1, reset: 1 }[m] ? m : "login";
+      var off = !sbc;
+      $("auth-off").hidden = !off;
+      $("af").hidden = off;
+      $("alinks").hidden = off;
+      $("lt").textContent = off ? "Accounts" : "Log in";
+      if (off) return;
+      if (USER && AMODE !== "reset") {
+        location.hash = "#/account";
+        return;
+      }
+      var c = {
+        login: ["Log in", "Log in"],
+        signup: ["Create your account", "Create account"],
+        forgot: ["Reset your password", "Send reset link"],
+        reset: ["Choose a new password", "Save new password"],
+      }[AMODE];
+      $("lt").textContent = c[0];
+      $("ab").textContent = c[1];
+      $("l-name").hidden = AMODE !== "signup";
+      $("l-email").hidden = AMODE === "reset";
+      $("l-pw").hidden = AMODE === "forgot";
+      $("af").apw.setAttribute("autocomplete", AMODE === "login" ? "current-password" : "new-password");
+      $("af").apw.value = "";
+      $("am").textContent = "";
+      var L = $("alinks");
+      L.textContent = "";
+      function lnk(t, mode) {
+        return h("a", { href: "#/login/" + mode, text: t });
+      }
+      if (AMODE === "login") {
+        L.appendChild(lnk("Create an account", "signup"));
+        L.appendChild(document.createTextNode(" · "));
+        L.appendChild(lnk("Forgot password?", "forgot"));
+      } else if (AMODE !== "reset") L.appendChild(lnk("Back to log in", "login"));
+    }
+    $("af").addEventListener("submit", function (e) {
+      e.preventDefault();
+      var fm = e.target,
+        m = $("am"),
+        b = $("ab"),
+        em = fm.aemail.value.trim(),
+        pw = fm.apw.value,
+        nm = fm.aname.value.trim(),
+        p,
+        base = location.href.split("#")[0];
+      function bad(t) {
+        note(m, t, 1);
+      }
+      if (!sbc) return bad("Accounts are not connected yet.");
+      if (AMODE !== "reset" && !/^\S+@\S+\.\S+$/.test(em)) return bad("Enter a valid email address.");
+      if (AMODE === "signup" && !nm) return bad("Enter your name.");
+      if (AMODE !== "forgot" && !pw) return bad("Enter your password.");
+      if ((AMODE === "signup" || AMODE === "reset") && pw.length < 8)
+        return bad("Use a password of at least 8 characters.");
+      b.disabled = true;
+      note(m, "Please wait…");
+      if (AMODE === "login") p = sbc.auth.signInWithPassword({ email: em, password: pw });
+      else if (AMODE === "signup")
+        p = sbc.auth.signUp({
+          email: em,
+          password: pw,
+          options: { data: { full_name: nm }, emailRedirectTo: base },
+        });
+      else if (AMODE === "forgot") p = sbc.auth.resetPasswordForEmail(em, { redirectTo: base });
+      else p = sbc.auth.updateUser({ password: pw });
+      q(p)
+        .then(function (r) {
+          if (r.error) throw r.error;
+          if (AMODE === "forgot") {
+            note(m, "If that email has an account, a reset link is on its way. Check your inbox.");
+            return;
+          }
+          var s = r.data && r.data.session;
+          if (AMODE === "signup" && !s) {
+            note(m, "Almost done. Check your email and click the confirmation link, then log in.");
+            return;
+          }
+          return (
+            s
+              ? setUser(s)
+              : q(sbc.auth.getSession()).then(function (x) {
+                  return setUser(x.data.session);
+                })
+          ).then(function () {
+            note(m, "");
+            RECOV = false;
+            location.hash = "#/account";
+          });
+        })
+        .catch(function (er) {
+          bad(fail(er));
+        })
+        .then(function () {
+          b.disabled = false;
+        });
+    });
+    /* ---- student account ---- */
+    var EST = {
+      pending: "Requested",
+      active: "Active",
+      completed: "Completed",
+      cancelled: "Cancelled",
+    };
+    function setEnr(id, status, done, msg) {
+      q(sbc.from("enrollments").update({ status: status }).eq("id", id).select("id"))
+        .then(function (r) {
+          if (r.error || !r.data || !r.data.length) throw r.error || new Error("Not allowed.");
+          done();
+        })
+        .catch(function (er) {
+          note(msg, "Could not update: " + fail(er), 1);
+        });
+    }
+    function renderAccount() {
+      var box = $("acb");
+      box.textContent = "";
+      if (!sbc) {
+        box.appendChild(h("p", { text: "Accounts are not connected yet." }));
+        return;
+      }
+      if (!READY) {
+        box.appendChild(h("p", { text: "Loading…" }));
+        return;
+      }
+      if (!USER) {
+        location.hash = "#/login";
+        return;
+      }
+      box.appendChild(h("p", { text: "Loading your courses…" }));
+      Promise.all([
+        q(
+          sbc
+            .from("enrollments")
+            .select("id,status,course_id,courses(title)")
+            .eq("student_id", USER.id),
+        ),
+        q(sbc.from("courses").select("id,slug,title,level,status").order("sort_order")),
+      ])
+        .then(function (rs) {
+          var er = rs[0].error || rs[1].error;
+          if (er) throw er;
+          drawAccount(box, rs[0].data || [], rs[1].data || []);
+        })
+        .catch(function (er) {
+          box.textContent = "";
+          box.appendChild(h("p", { text: "Could not load your account: " + fail(er) }));
+        });
+    }
+    function drawAccount(box, en, courses) {
+      box.textContent = "";
+      var name = (PROF && PROF.full_name) || "",
+        wrap = h("div", { class: "stack" });
+      wrap.appendChild(
+        h("div", { class: "card" }, [
+          h("h3", { text: "Welcome" + (name ? ", " + name : "") }),
+          h("p", { class: "small", text: USER.email }),
+          PROF && PROF.role === "admin"
+            ? h("p", null, [h("a", { class: "btn alt", href: "#/admin", text: "Open admin" })])
+            : null,
+        ]),
+      );
+      var mine = {};
+      en.forEach(function (x) {
+        mine[x.course_id] = x;
+      });
+      var cm = h("div", { class: "card" }, [h("h3", { text: "My courses" })]);
+      if (!en.length) cm.appendChild(h("p", { text: "You have not requested a course yet." }));
+      en.forEach(function (x) {
+        var row = h("div", { class: "rowf", style: "margin:8px 0" }),
+          ms = h("span", { class: "small", role: "status" });
+        row.appendChild(h("b", { text: x.courses ? x.courses.title : "Course" }));
+        row.appendChild(h("span", { class: "tag", text: EST[x.status] || x.status }));
+        if (x.status === "pending" || x.status === "cancelled") {
+          var bt = h("button", {
+            class: "btn alt",
+            type: "button",
+            text: x.status === "pending" ? "Cancel request" : "Request again",
+          });
+          bt.onclick = function () {
+            bt.disabled = true;
+            setEnr(x.id, x.status === "pending" ? "cancelled" : "pending", renderAccount, ms);
+          };
+          row.appendChild(bt);
+        }
+        row.appendChild(ms);
+        cm.appendChild(row);
+      });
+      wrap.appendChild(cm);
+      var av = h("div", { class: "card" }, [
+          h("h3", { text: "Request a course" }),
+          h("p", {
+            class: "small",
+            text: "Requesting adds you to Mamta’s list. She will talk to you personally about fees and schedule before anything starts. Nothing is charged here.",
+          }),
+        ]),
+        n = 0;
+      courses.forEach(function (c) {
+        if (mine[c.id] || c.status === "unavailable") return;
+        n++;
+        var row = h("div", { class: "rowf", style: "margin:8px 0" }),
+          ms = h("span", { class: "small", role: "status" }),
+          bt = h("button", { class: "btn", type: "button", text: "Request" });
+        bt.onclick = function () {
+          bt.disabled = true;
+          note(ms, "Sending…");
+          q(sbc.from("enrollments").insert({ student_id: USER.id, course_id: c.id, status: "pending" }))
+            .then(function (r) {
+              if (r.error) throw r.error;
+              renderAccount();
+            })
+            .catch(function (er) {
+              bt.disabled = false;
+              note(ms, "Could not send: " + fail(er), 1);
+            });
+        };
+        row.appendChild(h("b", { text: c.title }));
+        row.appendChild(h("span", { class: "tag", text: "Level: " + c.level }));
+        row.appendChild(bt);
+        row.appendChild(ms);
+        av.appendChild(row);
+      });
+      if (!n) av.appendChild(h("p", { text: "No other courses are open for requests right now." }));
+      wrap.appendChild(av);
+      var fn = h("input", { maxlength: "120", autocomplete: "name", "aria-label": "Full name" }),
+        tz = h("input", { maxlength: "80", autocomplete: "off", "aria-label": "Country or time zone" }),
+        sm = h("div", { role: "status" }),
+        sv = h("button", { class: "btn", type: "button", text: "Save details" });
+      fn.value = name;
+      tz.value = (PROF && PROF.country_tz) || "";
+      sv.onclick = function () {
+        var nn = fn.value.trim();
+        if (!nn) return note(sm, "Enter your name.", 1);
+        sv.disabled = true;
+        note(sm, "Saving…");
+        q(
+          sbc
+            .from("profiles")
+            .update({ full_name: nn, country_tz: tz.value.trim() || null })
+            .eq("id", USER.id)
+            .select("id"),
+        )
+          .then(function (r) {
+            if (r.error || !r.data || !r.data.length) throw r.error || new Error("Not saved.");
+            PROF.full_name = nn;
+            PROF.country_tz = tz.value.trim() || null;
+            note(sm, "Saved.");
+          })
+          .catch(function (er) {
+            note(sm, "Could not save: " + fail(er), 1);
+          })
+          .then(function () {
+            sv.disabled = false;
+          });
+      };
+      wrap.appendChild(
+        h("div", { class: "card" }, [
+          h("h3", { text: "Your details" }),
+          h("div", { class: "stack" }, [
+            h("label", null, ["Full name", fn]),
+            h("label", null, ["Country or time zone (optional)", tz]),
+            h("div", { class: "rowf" }, [sv, sm]),
+          ]),
+        ]),
+      );
+      var pw = h("input", {
+          type: "password",
+          autocomplete: "new-password",
+          maxlength: "200",
+          "aria-label": "New password",
+        }),
+        pm = h("div", { role: "status" }),
+        pb = h("button", { class: "btn alt", type: "button", text: "Change password" });
+      pb.onclick = function () {
+        if (pw.value.length < 8) return note(pm, "Use at least 8 characters.", 1);
+        pb.disabled = true;
+        note(pm, "Saving…");
+        q(sbc.auth.updateUser({ password: pw.value }))
+          .then(function (r) {
+            if (r.error) throw r.error;
+            pw.value = "";
+            note(pm, "Password changed.");
+          })
+          .catch(function (er) {
+            note(pm, fail(er), 1);
+          })
+          .then(function () {
+            pb.disabled = false;
+          });
+      };
+      var lo = h("button", { class: "btn alt", type: "button", text: "Log out" });
+      lo.onclick = function () {
+        q(sbc.auth.signOut()).then(function () {
+          USER = null;
+          PROF = null;
+          updNav();
+          location.hash = "#/login";
+        });
+      };
+      wrap.appendChild(
+        h("div", { class: "card" }, [
+          h("h3", { text: "Password" }),
+          h("div", { class: "rowf" }, [pw, pb, pm]),
+        ]),
+      );
+      wrap.appendChild(h("p", null, [lo]));
+      box.appendChild(wrap);
+    }
+    /* ---- admin ---- */
+    var ISTAT = [
+        ["new", "New"],
+        ["contacted", "Contacted"],
+        ["closed", "Closed"],
+      ],
+      ESTAT = [
+        ["pending", "Requested"],
+        ["active", "Active"],
+        ["completed", "Completed"],
+        ["cancelled", "Cancelled"],
+      ],
+      CSTAT = [
+        ["inquiry", "Open for registration"],
+        ["soon", "Coming soon"],
+        ["unavailable", "Unavailable"],
+      ];
+    function renderAdmin() {
+      var box = $("adb");
+      box.textContent = "";
+      if (!sbc) {
+        box.appendChild(h("p", { text: "Accounts are not connected yet." }));
+        return;
+      }
+      if (!READY) {
+        box.appendChild(h("p", { text: "Loading…" }));
+        return;
+      }
+      if (!USER) {
+        location.hash = "#/login";
+        return;
+      }
+      if (!PROF || PROF.role !== "admin") {
+        box.appendChild(h("p", { text: "This page is for administrators only." }));
+        return;
+      }
+      var tabs = h("div", { class: "tabs", role: "tablist" }),
+        body = h("div"),
+        sum = h("p", { class: "small" });
+      [
+        ["inq", "Inquiries"],
+        ["stu", "Students and enrolments"],
+        ["crs", "Courses"],
+      ].forEach(function (t) {
+        var b = h("button", {
+          type: "button",
+          role: "tab",
+          text: t[1],
+          "aria-selected": String(ADTAB === t[0]),
+        });
+        b.onclick = function () {
+          ADTAB = t[0];
+          Array.prototype.forEach.call(tabs.children, function (x) {
+            x.setAttribute("aria-selected", "false");
+          });
+          b.setAttribute("aria-selected", "true");
+          loadTab(body);
+        };
+        tabs.appendChild(b);
+      });
+      box.appendChild(sum);
+      box.appendChild(tabs);
+      box.appendChild(body);
+      loadTab(body);
+      Promise.all([
+        q(sbc.from("inquiries").select("id", { count: "exact", head: true }).eq("status", "new")),
+        q(sbc.from("enrollments").select("id", { count: "exact", head: true }).eq("status", "pending")),
+      ])
+        .then(function (rs) {
+          sum.textContent =
+            (rs[0].count || 0) +
+            " new inquiries · " +
+            (rs[1].count || 0) +
+            " pending enrolment requests";
+        })
+        .catch(function () {});
+    }
+    function loadTab(b) {
+      ({ inq: adInq, stu: adStu, crs: adCrs })[ADTAB](b);
+    }
+    function adInq(body) {
+      body.textContent = "Loading…";
+      q(sbc.from("inquiries").select("*").order("created_at", { ascending: false }).limit(300))
+        .then(function (r) {
+          if (r.error) throw r.error;
+          var rows = r.data || [],
+            fs = sel([["all", "All statuses"]].concat(ISTAT), "all"),
+            list = h("div", { class: "stack" });
+          function draw() {
+            list.textContent = "";
+            var n = 0;
+            rows.forEach(function (x) {
+              if (fs.value !== "all" && x.status !== fs.value) return;
+              n++;
+              list.appendChild(inqCard(x));
+            });
+            if (!n) list.appendChild(h("p", { text: "No inquiries here." }));
+          }
+          fs.onchange = draw;
+          fs.setAttribute("aria-label", "Filter by status");
+          body.textContent = "";
+          body.appendChild(
+            h("div", { class: "rowf", style: "margin-bottom:14px" }, [
+              fs,
+              h("span", { class: "small", text: rows.length + " loaded" }),
+            ]),
+          );
+          body.appendChild(list);
+          draw();
+        })
+        .catch(function (er) {
+          body.textContent = "Could not load inquiries: " + fail(er);
+        });
+    }
+    function inqCard(x) {
+      var ss = sel(ISTAT, x.status),
+        nt = h("textarea", { rows: "2", maxlength: "1000", "aria-label": "Private notes" }),
+        sb = h("button", { class: "btn", type: "button", text: "Save" }),
+        ms = h("span", { class: "small", role: "status" });
+      nt.value = x.admin_notes || "";
+      ss.setAttribute("aria-label", "Status");
+      sb.onclick = function () {
+        sb.disabled = true;
+        note(ms, "Saving…");
+        q(
+          sbc
+            .from("inquiries")
+            .update({ status: ss.value, admin_notes: nt.value.trim() || null })
+            .eq("id", x.id)
+            .select("id"),
+        )
+          .then(function (r) {
+            if (r.error || !r.data || !r.data.length) throw r.error || new Error("Not saved.");
+            x.status = ss.value;
+            x.admin_notes = nt.value.trim() || null;
+            note(ms, "Saved.");
+          })
+          .catch(function (er) {
+            note(ms, "Could not save: " + fail(er), 1);
+          })
+          .then(function () {
+            sb.disabled = false;
+          });
+      };
+      return h("div", { class: "card" }, [
+        h("h3", { text: x.full_name }),
+        h("p", { class: "small" }, [
+          h("a", { href: "mailto:" + x.email, text: x.email }),
+          x.mobile ? " · " : null,
+          x.mobile ? h("a", { href: "tel:" + x.mobile.replace(/[^0-9+]/g, ""), text: x.mobile }) : null,
+          " · " + when(x.created_at),
+        ]),
+        h("p", {
+          class: "small",
+          text:
+            [x.hindi_level, x.goal, x.lesson_type, x.country_tz, x.course_interest]
+              .filter(Boolean)
+              .join(" · ") + (x.sanskrit_interest ? " · Interested in Sanskrit" : ""),
+        }),
+        x.message ? h("p", { style: "white-space:pre-wrap", text: x.message }) : null,
+        h("div", { class: "rowf" }, [ss, sb, ms]),
+        nt,
+      ]);
+    }
+    function adStu(body) {
+      body.textContent = "Loading…";
+      Promise.all([
+        q(
+          sbc
+            .from("profiles")
+            .select(
+              "id,full_name,email,role,country_tz,created_at,enrollments(id,status,courses(title))",
+            )
+            .order("created_at", { ascending: false }),
+        ),
+        q(sbc.from("courses").select("id,title").order("sort_order")),
+      ])
+        .then(function (rs) {
+          var er = rs[0].error || rs[1].error;
+          if (er) throw er;
+          var cs = rs[1].data || [],
+            list = h("div", { class: "stack" });
+          body.textContent = "";
+          if (!rs[0].data.length) body.appendChild(h("p", { text: "No students have signed up yet." }));
+          rs[0].data.forEach(function (p) {
+            var cd = h("div", { class: "card" }, [
+              h("h3", { text: p.full_name || "(no name)" }),
+              h("p", { class: "small" }, [
+                h("a", { href: "mailto:" + (p.email || ""), text: p.email || "" }),
+                " · joined " +
+                  when(p.created_at) +
+                  (p.country_tz ? " · " + p.country_tz : "") +
+                  (p.role === "admin" ? " · admin" : ""),
+              ]),
+            ]);
+            (p.enrollments || []).forEach(function (x) {
+              var s2 = sel(ESTAT, x.status),
+                ms = h("span", { class: "small", role: "status" });
+              s2.setAttribute("aria-label", "Enrolment status");
+              s2.onchange = function () {
+                note(ms, "Saving…");
+                q(sbc.from("enrollments").update({ status: s2.value }).eq("id", x.id).select("id"))
+                  .then(function (r) {
+                    if (r.error || !r.data || !r.data.length) throw r.error || new Error("Not saved.");
+                    note(ms, "Saved.");
+                  })
+                  .catch(function (er) {
+                    note(ms, "Could not save: " + fail(er), 1);
+                  });
+              };
+              cd.appendChild(
+                h("div", { class: "rowf", style: "margin:6px 0" }, [
+                  h("b", { text: x.courses ? x.courses.title : "Course" }),
+                  s2,
+                  ms,
+                ]),
+              );
+            });
+            var cs2 = sel(
+                [["", "Enrol in a course…"]].concat(
+                  cs.map(function (c) {
+                    return [c.id, c.title];
+                  }),
+                ),
+                "",
+              ),
+              ab = h("button", { class: "btn alt", type: "button", text: "Enrol (active)" }),
+              am2 = h("span", { class: "small", role: "status" });
+            cs2.setAttribute("aria-label", "Course");
+            ab.onclick = function () {
+              if (!cs2.value) return note(am2, "Choose a course first.", 1);
+              ab.disabled = true;
+              q(
+                sbc
+                  .from("enrollments")
+                  .insert({ student_id: p.id, course_id: cs2.value, status: "active" }),
+              )
+                .then(function (r) {
+                  if (r.error) throw r.error;
+                  adStu(body);
+                })
+                .catch(function (er) {
+                  ab.disabled = false;
+                  note(
+                    am2,
+                    er.code === "23505"
+                      ? "Already enrolled in that course."
+                      : "Could not enrol: " + fail(er),
+                    1,
+                  );
+                });
+            };
+            cd.appendChild(h("div", { class: "rowf", style: "margin-top:10px" }, [cs2, ab, am2]));
+            list.appendChild(cd);
+          });
+          body.appendChild(list);
+        })
+        .catch(function (er) {
+          body.textContent = "Could not load students: " + fail(er);
+        });
+    }
+    function adCrs(body) {
+      body.textContent = "Loading…";
+      q(sbc.from("courses").select("*").order("sort_order"))
+        .then(function (r) {
+          if (r.error) throw r.error;
+          body.textContent = "";
+          body.appendChild(
+            h("p", {
+              class: "small",
+              text: "Changes here update the Learn Hindi page and the course pages. Fees are not shown on the website; discuss them with each student privately.",
+            }),
+          );
+          var list = h("div", { class: "stack" });
+          r.data.forEach(function (c) {
+            var ss = sel(CSTAT, c.status),
+              pub = h("input", { type: "checkbox" }),
+              sb = h("button", { class: "btn", type: "button", text: "Save" }),
+              ms = h("span", { class: "small", role: "status" });
+            pub.checked = !!c.is_published;
+            ss.setAttribute("aria-label", "Status");
+            sb.onclick = function () {
+              sb.disabled = true;
+              note(ms, "Saving…");
+              q(
+                sbc
+                  .from("courses")
+                  .update({
+                    status: ss.value,
+                    is_published: pub.checked,
+                  })
+                  .eq("id", c.id)
+                  .select("id"),
+              )
+                .then(function (r2) {
+                  if (r2.error || !r2.data || !r2.data.length)
+                    throw r2.error || new Error("Not saved.");
+                  note(ms, "Saved.");
+                  syncCourses();
+                })
+                .catch(function (er) {
+                  note(ms, "Could not save: " + fail(er), 1);
+                })
+                .then(function () {
+                  sb.disabled = false;
+                });
+            };
+            list.appendChild(
+              h("div", { class: "card" }, [
+                h("h3", { text: c.title }),
+                h("div", { class: "rowf" }, [
+                  ss,
+                  h("label", { class: "rowf", style: "font-weight:400" }, [pub, "Published"]),
+                  sb,
+                  ms,
+                ]),
+              ]),
+            );
+          });
+          body.appendChild(list);
+        })
+        .catch(function (er) {
+          body.textContent = "Could not load courses: " + fail(er);
+        });
+    }
+    updNav();
+    if (sbc) {
+      sbc.auth.onAuthStateChange(function (ev) {
+        if (ev === "PASSWORD_RECOVERY") RECOV = true;
+        if (ev === "SIGNED_OUT")
+          setTimeout(function () {
+            USER = null;
+            PROF = null;
+            updNav();
+          }, 0);
+      });
+      q(sbc.auth.getSession())
+        .then(function (r) {
+          return setUser(r.data && r.data.session);
+        })
+        .catch(function () {})
+        .then(function () {
+          READY = true;
+          if (RECOV) {
+            location.hash = "#/login/reset";
+            return;
+          }
+          if (/^#\/(login|account|admin)/.test(location.hash)) route();
+        });
+      syncCourses();
+    }
+    function validMobile(v) {
+      var d = v.replace(/\D/g, "").length;
+      return /^\+?[0-9 ()\-]{6,25}$/.test(v.trim()) && d >= 7 && d <= 15;
+    }
+    var f = $("f");
+    function route() {
+      var p = location.hash.replace(/^#\/?/, "").split("/"),
+        v = p[0] || "home",
+        a = decodeURIComponent(p[1] || "");
+      if (!T[v]) {
+        v = "home";
+        a = "";
+      }
+      if (v === "course" && !course(a)) {
+        v = "courses";
+      }
+      document.querySelectorAll(".view").forEach(function (e) {
+        e.hidden = e.dataset.view !== v;
+      });
+      if (v !== "course") {
+        document.title = T[v][0];
+      }
+      $("md").content = T[v][1];
+      document.querySelectorAll(".links a[data-v]").forEach(function (l) {
+        l.classList.toggle("on", l.dataset.v === v);
+      });
+      if (v === "login") authView(a);
+      if (v === "account") renderAccount();
+      if (v === "admin") renderAdmin();
+      if (v === "contact") {
+        f.reset();
+        $("msg").textContent = "";
+        var C = CFG.courses[a];
+        if (C) {
+          f.elements.course.value = C.title;
+          f.elements.msg.value = "I am interested in: " + C.title + ".\n";
+          if (a === "beginner") f.elements.level.value = "Complete beginner";
+        }
+        if (a === "sanskrit" && f.elements.sk) f.elements.sk.checked = true;
+      }
+      if (v === "home" && a && $(a)) $(a).scrollIntoView();
+      else scrollTo(0, 0);
+      lk.classList.remove("open");
+      bg.setAttribute("aria-expanded", false);
+    }
+    var bg = $("burger"),
+      lk = $("links");
+    bg.onclick = function () {
+      var o = lk.classList.toggle("open");
+      bg.setAttribute("aria-expanded", o);
+    };
+    addEventListener("hashchange", route);
+    route();
+    f.addEventListener("submit", function (e) {
+      e.preventDefault();
+      var m = $("msg"),
+        b = $("sb"),
+        bad = [];
+      f.querySelectorAll(".err").forEach(function (x) {
+        x.remove();
+      });
+      f.querySelectorAll("[aria-invalid]").forEach(function (x) {
+        x.removeAttribute("aria-invalid");
+      });
+      function chk(el, ok, t) {
+        if (!ok) {
+          bad.push(el);
+          el.setAttribute("aria-invalid", "true");
+          var s = document.createElement("span");
+          s.className = "err";
+          s.textContent = t;
+          el.parentNode.appendChild(s);
+        }
+      }
+      chk(f.elements.name, f.elements.name.value.trim(), "Enter your name.");
+      chk(
+        f.elements.email,
+        /^\S+@\S+\.\S+$/.test(f.elements.email.value),
+        "Enter a valid email address.",
+      );
+      chk(f.elements.tz, f.elements.tz.value.trim(), "Enter your country or time zone.");
+      chk(
+        f.elements.mobile,
+        validMobile(f.elements.mobile.value),
+        "Enter a mobile number with country code, e.g. +44 7700 900123.",
+      );
+      chk(f.elements.level, f.elements.level.value, "Choose your level.");
+      chk(f.elements.goal, f.elements.goal.value, "Choose your goal.");
+      chk(f.elements.ok, f.elements.ok.checked, "Please agree so we can reply.");
+      if (bad.length) {
+        m.style.color = "#b3261e";
+        m.textContent = "Please fix the highlighted fields.";
+        bad[0].focus();
+        return;
+      }
+      if (f.elements.website.value) return;
+      var sb = CFG.supabaseUrl && CFG.supabaseKey;
+      if (!sb && !CFG.formEndpoint) {
+        m.style.color = "#b3261e";
+        m.textContent =
+          "This form is not connected to a backend yet, so nothing was sent. Set CFG.supabaseUrl and CFG.supabaseKey to enable it.";
+        return;
+      }
+      b.disabled = true;
+      m.style.color = "inherit";
+      m.textContent = "Sending…";
+      var d = {},
+        url = CFG.formEndpoint,
+        hd = { "Content-Type": "application/json", Accept: "application/json" },
+        el = f.elements;
+      if (sb) {
+        d = {
+          full_name: el.name.value.trim(),
+          email: el.email.value.trim(),
+          country_tz: el.tz.value.trim(),
+          mobile: el.mobile.value.trim(),
+          hindi_level: el.level.value,
+          goal: el.goal.value,
+          lesson_type: el.lt.value || null,
+          course_interest: el.course.value || null,
+          message: el.msg.value.trim() || null,
+          sanskrit_interest: !!(el.sk && el.sk.checked),
+          consent: true,
+        };
+        url = CFG.supabaseUrl.replace(/\/+$/, "") + "/rest/v1/inquiries";
+        hd.apikey = CFG.supabaseKey;
+        hd.Prefer = "return=minimal";
+        if (CFG.supabaseKey.indexOf("sb_") !== 0) hd.Authorization = "Bearer " + CFG.supabaseKey;
+      } else {
+        new FormData(f).forEach(function (v, k) {
+          d[k] = v;
+        });
+        delete d.website;
+      }
+      fetch(url, { method: "POST", headers: hd, body: JSON.stringify(d) })
+        .then(function (r) {
+          if (!r.ok) throw 0;
+          m.textContent = "Thank you. Your inquiry was received.";
+          f.reset();
+        })
+        .catch(function () {
+          m.style.color = "#b3261e";
+          m.textContent = "Something went wrong and your inquiry was not sent. Please try again.";
+        })
+        .then(function () {
+          b.disabled = false;
+        });
+    });
+  </script></body></html>
